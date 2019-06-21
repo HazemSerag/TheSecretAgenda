@@ -1,0 +1,783 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>The Secret Agenda</title>
+
+    <style>
+      #im{
+        position: fixed;
+        /* transform: rotate(180deg); */
+        z-index: 2;
+      }
+      body{
+        z-index: 1;
+      }
+    </style>
+
+    <!-- BEGIN THEME PLUGINS STYLE -->
+    <!-- <link rel="stylesheet" href="node_modules/swiper/dist/css/swiper.min.css"> -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/all.css">
+    <link rel="stylesheet" href="assets/plugins/animate.css">
+
+
+    <!-- END THEME PLUGINS STYLE -->
+
+    <!--[if IE 9]>
+      <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
+    <![endif]-->
+    <!--[if lte IE 8]>
+      <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/g/html5shiv@3.7.3"></script>
+    <![endif]-->
+
+    <!-- THEME STYLES -->
+    <link href="assets/css/main.min.css" rel="stylesheet" type="text/css"/>   
+     <!-- END THEME STYLES -->
+
+    
+    
+  </head>
+
+
+<body>
+  <header>
+  </header>
+  
+  <main>
+    <section>
+        <canvas id="im" width="1366" height="653"></canvas>
+        
+      <div class="container-fluid">
+         <div> 
+            <iframe src="assets/img/Sea.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+        </div>
+        <div id="main" class="row">
+          <div class="daily">
+              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalCenter">
+                  <i class="far fa-star"></i>
+                </button>
+          </div>
+          <div class="menu col-md-12">
+            <div class="row">
+              <div class="menuIcon">
+                  <i class="fas fa-bars" id="men"></i>
+              </div>
+
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalCenterTitle">Message of the Day</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p id="msgDay">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-Light" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="items col-lg-9">
+                <a href="#" id="storyB" class="menuLinks">Story</a>
+                <a href="#"  id='galleryB' class="menuLinks">Gallery</a>
+                <a href="#" id='quotesB' class="menuLinks">Quotes</a>
+                <i class="fas fa-pause menuLinks" id='pl'></i>
+
+              </div>
+            </div>
+          </div>
+          <div class="firstPage col-12">
+            <div class="row">    
+              <div class="left col-lg-3">
+
+              </div>
+
+              <div class="title col-lg-9">
+                <div class="row">
+
+                  <div class="col-lg-6">
+
+                  </div>
+                  <div class="col-lg-6">
+                    <h1>The Secret <span>Agenda</span></h1>     
+                  </div>
+                </div>
+              </div>
+              <div class="pic">
+                <img src="assets/img/LG.jpg" class="img-fluid" alt="Responsive image">
+              </div>
+            </div>
+          </div>
+          <div class="secondPage col-12 mt-5">
+            <div class="row">
+              <div class="birthday col-md-12 my-5">
+                <div class="birthdayIcon">
+                  <img class="cake" src="assets/img/fruit.png">
+                  <h2>Seventeenth of March, Two Thousand Ninteen</h2>
+                  <h4>17/03/2019</h4>
+                </div>
+              </div>
+              <div class="story col-md-12" id='story'>
+                <img class="heart" src="assets/img/curly.png">  
+                <div class="loveStory">Our Story</div>
+                <div class="container custom">
+                  <div class="row my-5">
+                      <div id="Reem" class="couple col-md-6 p-3 ">
+                          <div class="card">
+                            <div class="personImg p1 mx-auto">
+                            </div>
+                            <!-- <div class="shape mt-3 "><i class="fas fa-venus"></i></div> -->
+                            <div class="name my-3">Daenerys</div>
+                            <div class="info">
+                              Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse nihil, flexitarian Truffaut…                            </div>
+                          </div>
+                      </div>
+                      <div id="Hazem" class="couple col-md-6 p-3">
+                          <div class="card">
+                            <div class="personImg p2 mx-auto">
+                            </div>
+                            <div class="name my-3">Drogo</div>
+                            <div class="info">
+                              Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse nihil, flexitarian Truffaut…
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="begin col-md-12 mt-5">
+                <div class="start">Where it all started</div>
+                <div class="startIco my-3"><i class="fas fa-feather-alt"></i></div>
+                <div class="accordion mb-5" id="accordionExample">
+                  <div class="card">
+                    <div class="card-header " id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          First Of All
+                        </button>
+                      </h2>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="row cardd">
+                        <div class="card-body col-md-12">
+                          The first time we met, was in Starbucks New-York 03/08/2018. It was an awesome day in general and special day because i found YOU !
+                        </div>
+                        <div class="imgBody col-md-3 my-3">
+                            <img src="assets/img/story/1.JPG">
+                        </div>
+                        <div class="imgBody col-md-3 my-3">
+                            <img src="assets/img/story/2.JPG">
+                        </div>
+                        <div class="imgBody col-md-3 my-3">
+                            <img src="assets/img/story/3.JPG">
+                        </div>
+                        <div class="imgBody col-md-3 my-3">
+                            <img src="assets/img/story/4.JPG">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            Day in New York
+                          </button>
+                        </h2>
+                      </div>
+                  
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="row cardd">
+                          <div class="card-body col-md-12">
+                            It was the first day to meet alone 27/09/2018, after long chats, likes and stalking each other. This day was weird but was lovely. It was the sparkle of our journey.
+                          </div>
+                          <div class="imgBody col-md-3 my-3">
+                              <img src="assets/img/story/5.JPG">
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            Our First Date
+                          </button>
+                        </h2>
+                      </div>
+                  
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="row cardd">
+                          <div class="card-body col-md-12">
+                            I call it 'The Green Day' 05/10/2018. It was the day that we fell in love together, it was the day how we treat each other like lovers, it was the day that i realized that you are the one and it was the day that i choose to say 'I Love You'.
+                          </div>
+                          <div class="imgBody col-md-3 my-3">
+                              <img src="assets/img/story/6.JPG">
+                          </div>
+                          <div class="imgBody col-md-3 my-3">
+                              <img src="assets/img/story/9.JPG">
+                          </div>
+                          <div class="imgBody col-md-3 my-3">
+                              <img src="assets/img/story/8.JPG">
+                          </div>
+                          <div class="imgBody col-md-3 my-3">
+                              <img src="assets/img/story/7.JPG">
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                             We are Together
+                          </button>
+                        </h2>
+                      </div>
+                  
+                      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <div class="row cardd">
+                          <div class="card-body col-md-12">
+                            Officially we are finaly together, i remember all the details of this day. The lovely plants, the food on the beach, our coffee and central park. I love your company !. 
+                          </div>
+                          <div class="imgBody col-md-3 my-3">
+                              <img src="assets/img/story/10.JPG">
+                          </div>
+                          <div class="imgBody col-md-3 my-3">
+                              <img src="assets/img/story/11.JPG">
+                          </div>
+                          <div class="imgBody col-md-3 my-3">
+                              <img src="assets/img/story/12.JPG">
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery col-md-12 " id='gallery'>
+                  <div class="galleryTitle  mt-5">
+                    <div>Gallery</div>
+                  </div>
+                  <div class="galleryDark">
+                    <div class="container">
+                      <div class="galleryOptions my-3 ">
+                        <div class="row">
+                          <div class="col-4"><span class="favorite filter-button active" id='favv' data-filter='fav'><i class="fas fa-heart"></i></span></div>
+                          <div class="col-4" ><span class="food filter-button" data-filter='foods'><i class="fas fa-utensils"></i></span></div>
+                          <div class="col-4"><span class="spots filter-button" data-filter='spot'><i class="fas fa-map-marker-alt"></i></span></div>
+                          <div class="col-4 my-1"><span class="favoriteWord">Favorites</span></div>
+                          <div class="col-4 my-1"><span class="foodWord">Food</span></div>
+                          <div class="col-4 my-1"><span class="spotsWord">Spots</span></div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="galleryContent col-12 my-3 ">
+                          <div class="card-columns">
+                            
+                            <!-- fav -->
+                            <div class="card filter fav">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris</p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2018/12/15</p>
+                                </div> 
+                              <img src="assets/img/fav/12.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter fav">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>---</p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>-----</p>
+                                </div> 
+                              <img src="assets/img/fav/7.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter fav">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris </p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2019/11/24</p>
+                                </div>         
+                              <img src="assets/img/fav/3.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter fav">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris </p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2019/02/01</p>
+                                </div>
+                              <img src="assets/img/fav/4.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter fav">
+                                <div class="imgOverlay">
+                                    <h3>Location</h3>
+                                    <p>France, Paris </p>
+                                  </div>
+                                  <div class="imgOverlay2">
+                                    <h3>Date</h3>
+                                    <p>2019/11/02</p>
+                                </div>                    
+                              <img src="assets/img/fav/5.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter fav">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris </p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2019/02/09</p>
+                                </div>             
+                              <img src="assets/img/fav/6.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter fav">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris </p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2019/03/10</p>
+                                </div>           
+                              <img src="assets/img/fav/2.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter fav">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>Paris</p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>----</p>
+                                </div>           
+                              <img src="assets/img/fav/8.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter fav">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris</p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2018/12/05</p>
+                                </div>                   
+                              <img src="assets/img/fav/9.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter fav">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris </p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2018/12/05</p>
+                                </div>                   
+                              <img src="assets/img/fav/10.JPG" class="card-img-top" alt="...">  
+                            </div>
+
+                            <!-- food -->
+
+                            <div class="card filter foods">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris</p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2018/10/13</p>
+                                </div>                            
+                              <img src="assets/img/food/1.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter foods">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris</p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2018/12/6</p>
+                                </div>                            
+                              <img src="assets/img/food/2.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter foods">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris</p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2018/10/26</p>
+                                </div>                  
+                              <img src="assets/img/food/3.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter foods">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris</p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2019/12/05</p>
+                                </div>                   
+                              <img src="assets/img/food/4.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter foods">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris</p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2019/02/01</p>
+                                </div>             
+                              <img src="assets/img/food/5.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter foods">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris</p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2019/02/02</p>
+                                </div>                     
+                              <img src="assets/img/food/6.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter foods">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris</p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2019/02/09</p>
+                                </div>                     
+                              <img src="assets/img/food/7.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter foods">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris</p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2019/02/16</p>
+                                </div>                     
+                              <img src="assets/img/food/8.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter foods">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris</p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2019/03/02</p>
+                                </div>                    
+                              <img src="assets/img/food/11.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter foods">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris</p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2019/02/26</p>
+                                </div>                     
+                              <img src="assets/img/food/10.JPG" class="card-img-top" alt="...">  
+                            </div>
+
+
+                            <!-- spot -->
+
+                            <div class="card filter spot">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris</p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2018/12/30</p>
+                                </div>                            
+                              <img src="assets/img/spots/1.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter spot">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris</p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>----</p>
+                                </div>                            
+                                <img src="assets/img/spots/2.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter spot">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris</p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>----</p>
+                                </div>                            
+                                <img src="assets/img/spots/3.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter spot">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Lyon</p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2018/10/12</p>
+                                </div>                            
+                                <img src="assets/img/spots/4.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter spot">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris (Villa Ferdnand)</p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2018/10/12</p>
+                                </div>                            
+                                <img src="assets/img/spots/5.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter spot">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris</p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2019/10/26</p>
+                                </div>                            
+                                <img src="assets/img/spots/6.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter spot">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris</p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2018/11/23</p>
+                                </div>                            
+                                <img src="assets/img/spots/7.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter spot">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris</p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2018/11/23</p>
+                                </div>                            
+                                <img src="assets/img/spots/8.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter spot">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Paris</p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2018/12/15</p>
+                                </div>                            
+                                <img src="assets/img/spots/9.JPG" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card filter spot">
+                                <div class="imgOverlay">
+                                  <h3>Location</h3>
+                                  <p>France, Lyon</p>
+                                </div>
+                                <div class="imgOverlay2">
+                                  <h3>Date</h3>
+                                  <p>2018/12/15</p>
+                                </div>                            
+                                <img src="assets/img/spots/10.JPG" class="card-img-top" alt="...">  
+                            </div>
+
+                          </div> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>  
+            </div>
+          </div>
+          <div class="thirdPage col-12 my-5">
+            <div class="row">
+                <div class="quotesTitle col-12 mb-4" id='quotes'>
+                  Quotes
+                </div>
+              <div class="quotes col-10 m-auto">
+                <div class="row">
+                  <div class="col-md-4 quote1 my-3">
+                    <div class="card" id="1" style="background: white; color: black; border: 1px solid rgba(0, 0, 0, 0.125);">
+                      <blockquote class="blockquote mb-0 card-body">
+                        <p>
+                          “It’s one thing to fall in love. It’s another to feel someone else fall in love with you, and to feel a responsibility toward that love.”
+                        </p>
+                        <footer class="blockquote-footer">
+                          <small class="text-muted">
+                            Written by <cite title="Source Title">Drenyes</cite>
+                          </small>
+                        </footer>
+                      </blockquote>
+                    </div>
+                  </div>
+                  <div class="col-md-4 quote2 my-3">
+                      <div class="card" id="2" style="border: 1px solid rgba(0, 0, 0, 0.125); background: white; color: black;">
+                        <blockquote class="blockquote mb-0 card-body">
+                          <p>
+                            “I never loved you any more than I do, right this second. And I’ll never love you any less than I do, right this second.”
+                          </p>
+
+                          <footer class="blockquote-footer">
+                            <small class="text-muted">
+                              Written by <cite title="Source Title">Drenyes</cite>
+                            </small>
+                          </footer>
+                        </blockquote>
+                      </div>
+                  </div>
+                  <div class="col-md-4 quote3 my-3">
+                      <div class="card" id="3" style="border: 1px solid rgba(0, 0, 0, 0.125); background: white; color: black;">
+                        <blockquote class="blockquote mb-0 card-body">
+                          <p>
+                              “It’s one thing to fall in love. It’s another to feel someone else fall in love with you, and to feel a responsibility toward that love.”
+                            </p>
+
+                          <footer class="blockquote-footer">
+                            <small class="text-muted">
+                              Written by <cite title="Source Title">Drenyes</cite>
+                            </small>
+                          </footer>
+                        </blockquote>
+                      </div>
+                  </div>
+                  <div class="col-md-4 quote4 my-3">
+                      <div class="card" id="4" style="border: 1px solid rgba(0, 0, 0, 0.125); background: white; color: black;">
+                        <blockquote class="blockquote mb-0 card-body">
+                          <p>
+                            
+                            “I knew the second I met you that there was something about you I needed. Turns out it wasn’t something about you at all. It was just you.”                          </p>
+
+                          <footer class="blockquote-footer">
+                            <small class="text-muted">
+                              Written by <cite title="Source Title">Drenyes</cite>
+                            </small>
+                          </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                    <div class="col-md-4 quote5 my-3">
+                        <div class="card" id="5" style="border: 1px solid rgba(0, 0, 0, 0.125); background: white; color: black;">
+                          <blockquote class="blockquote mb-0 card-body">
+                           
+                            <p>
+                              “I knew the second I met you that there was something about you I needed. Turns out it wasn’t something about you at all. It was just you.”                            </p>
+
+                            <footer class="blockquote-footer">
+                              <small class="text-muted">
+                                Written by <cite title="Source Title">Drenyes</cite>
+                              </small>
+                            </footer>
+                          </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-md-4 quote6 my-3">
+                        <div class="card" id="6" style="border: 1px solid rgba(0, 0, 0, 0.125); background: white; color: black;">
+                          <blockquote class="blockquote mb-0 card-body">
+                           
+                            <p>“I knew the second I met you that there was something about you I needed. Turns out it wasn’t something about you at all. It was just you.”
+                            </p>
+
+                            <footer class="blockquote-footer">
+                              <small class="text-muted">
+                                Written by <cite title="Source Title">Drenyes</cite>
+                              </small>
+                            </footer>
+                          </blockquote>
+                        </div>
+                    </div>   
+                </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+      
+    
+    
+
+<!--========== JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) ==========-->
+<!-- CORE PLUGINS -->
+<!--[if lt IE 9]>
+<script src="assets/plugins/html5shiv.js"></script>
+<script src="assets/plugins/respond.min.js"></script>
+<![endif]-->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/plugins/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- js -->
+<script type="text/javascript" src="assets/js/main.js"></script>
+<!-- <script src="node_modules/swiper/dist/js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+</script> -->
+
+
+<!-- END CORE PLUGINS -->
+
+<!--[if lte IE 8]>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/js/bootstrap-ie8.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.js"></script>
+  <![endif]-->
+
+<!--========== END JAVASCRIPTS ==========-->    
+
+  </body>
+</html>
